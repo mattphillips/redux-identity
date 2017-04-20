@@ -9,6 +9,7 @@
     "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
     "test": "jest",
     "test:coverage": "yarn test -- --coverage",
+    "test:coveralls": "yarn test:coverage && cat ./coverage/lcov.info | coveralls",
     "test:watch": "yarn test -- --watch"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "babel-core": "^6.24.1",
     "babel-jest": "^19.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^2.13.0",
     "husky": "^0.13.3",
     "jest": "^19.0.2",
     "lint-staged": "^3.4.0",
