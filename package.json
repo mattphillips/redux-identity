@@ -1,0 +1,24 @@
+{
+  "name": "redux-identity",
+  "version": "0.0.1",
+  "description": "A simple redux reducer that returns the given state",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mattphillips/redux-identity.git"
+  },
+  "keywords": [
+    "redux",
+    "reducer",
+    "identity",
+    "fp",
+    "pure",
+    "persist"
+  ],
+  "author": "Matt Phillips (mattphillips)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattphillips/redux-identity/issues"
+  },
+  "homepage": "https://github.com/mattphillips/redux-identity#readme"
+}
