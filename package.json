@@ -34,6 +34,8 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-jest": "^19.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "coveralls": "^2.13.0",
     "husky": "^0.13.3",
@@ -45,6 +47,10 @@
     "presets": [
       "es2015",
       "jest"
+    ],
+    "plugins": [
+      "add-module-exports",
+      "transform-es2015-modules-umd"
     ]
   },
   "lint-staged": {
