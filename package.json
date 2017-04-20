@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "A simple redux reducer that returns the given state",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "babel src -d dist --ignore *.test.js",
+    "prepublish": "yarn build",
     "precommit": "lint-staged",
     "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
     "test": "jest",
@@ -22,7 +26,9 @@
     "identity",
     "fp",
     "pure",
-    "persist"
+    "persist",
+    "state",
+    "slice"
   ],
   "author": "Matt Phillips (mattphillips)",
   "license": "MIT",
