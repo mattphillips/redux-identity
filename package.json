@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "description": "A simple redux reducer that returns the given state",
   "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist --ignore *.test.js",
+    "precommit": "lint-staged",
+    "prettier": "prettier 'src/**/*.js' --write --single-quote=true",
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mattphillips/redux-identity.git"
@@ -20,5 +26,27 @@
   "bugs": {
     "url": "https://github.com/mattphillips/redux-identity/issues"
   },
-  "homepage": "https://github.com/mattphillips/redux-identity#readme"
+  "homepage": "https://github.com/mattphillips/redux-identity#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^19.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "lint-staged": "^3.4.0",
+    "prettier": "^1.2.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "jest"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn prettier",
+      "git add"
+    ]
+  }
 }
